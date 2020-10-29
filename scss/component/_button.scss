@@ -11,25 +11,37 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    @media (min-width: $breakpoint-tablet) {
+      padding: 10px 30px;
+    }
+    & + & {
+      @media (min-width: $breakpoint-tablet) {
+        margin-left: 10px;
+      }
+    }
+
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $color-secondary;
+    &:hover {
+      background-color: $color-hover;
+    }
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $color-error;
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $color-info;
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $color-success;
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $color-warning;
   }
   
