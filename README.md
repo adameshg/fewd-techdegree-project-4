@@ -1,4 +1,4 @@
-# techdegree-project-4
+# Sass Web Style Guide
  
 Project Overview
 
